@@ -18,9 +18,11 @@ public class ProductDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
+	
 	@Size(min = 5,max = 60,message = "Nome deve ter entre 5 a 60 catacteres")
 	@NotBlank(message = "Campo requerido")
 	private String name;
+	
 	private String description;
 	
 	@Positive(message = "O preço deve ser um valor positivo")
